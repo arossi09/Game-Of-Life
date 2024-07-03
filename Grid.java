@@ -17,6 +17,7 @@ public class Grid extends JPanel{
 
     }
 
+    /*
     public static void main(String[] args) {
         Grid application = new Grid();
         application.setVisible(true);
@@ -40,7 +41,7 @@ public class Grid extends JPanel{
 
         application.repaint();
     }
-
+    */
     public void clearGrid(){
         for(int x = 0; x < columns; x++){
             for(int y = 0; y < rows; y++){
