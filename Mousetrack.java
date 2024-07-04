@@ -10,10 +10,10 @@ public class Mousetrack implements MouseListener{
 
     @Override
     public void mouseClicked(MouseEvent e) {
-        int x = e.getX()/20;
-        int y = e.getY()/20;
-        g.flipPoint(y,x);
+        int x = e.getX() / 20;
+        int y = e.getY() / 20;
         System.out.println(x + ", " + y);
+        g.flipPoint(y,x);
         g.repaint();
     }
 
