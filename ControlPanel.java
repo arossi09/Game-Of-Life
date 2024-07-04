@@ -2,7 +2,12 @@ import javax.swing.*;
 import java.awt.*;
 
 public class ControlPanel extends JPanel {
-    public ControlPanel(){
+
+    Grid g;
+
+    public ControlPanel(Grid f){
+        g = f;
+
         JButton explanation = new JButton("Explanation");
         JButton lexicon = new JButton("Lexicon");
         JButton start = new JButton("Start");
@@ -14,5 +19,9 @@ public class ControlPanel extends JPanel {
         add(start);
         add(next);
         add(clear);
+
+        Nanny actions = new Nanny(g);
+        clear.addActionListener(actions);
+        next.addActionListener(actions);
     }
 }

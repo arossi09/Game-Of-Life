@@ -16,8 +16,12 @@ public class Game extends JFrame {
         JLabel header = new JLabel("Conway's Game of Life");
         add(header, BorderLayout.NORTH);
         Grid g = new Grid();
+        ControlPanel c = new ControlPanel(g); //added grid for nanny
+
+        Mousetrack grid_clicker = new Mousetrack(g);
+        g.addMouseListener(grid_clicker); //blake, trying this
+
         add(g, BorderLayout.CENTER);
-        ControlPanel c = new ControlPanel();
         add(c, BorderLayout.SOUTH);
 
     }
