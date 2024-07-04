@@ -11,11 +11,12 @@ public class Nanny implements ActionListener {
     }
     @Override
     public void actionPerformed(ActionEvent e) {
+        Genius genius = new Genius();
         if (e.getActionCommand().equals("Clear")){
             g.clearGrid();
         }
         else if(e.getActionCommand().equals("Next"))
-            Genius.CalculateNextGeneration(g.getGrid());
+            genius.calculate(g);
         g.repaint();
     }
 }

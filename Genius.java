@@ -2,9 +2,10 @@ public class Genius {
     public static void Genius(Grid g){
 
     }
+
     public int calculate(Grid g){
-        for(int i = 0; i < g.rows; i++){
-            for(int j = 0; j < g.columns; j++){
+        for(int i = 0; i < g.getRows(); i++){
+            for(int j = 0; j < g.getColumns(); j++){
                 int alive = count(g);
                 if(g.getPoint(i, j) == 1){
                     if(alive < 2 || alive > 3){
@@ -16,13 +17,14 @@ public class Genius {
                 }
                 else{
                     if(alive == 3){
-                        = 0;
+                        g.flipPoint(i, j);
                     }
                 }
 
 
             }
         }
+        return 0;
     }
     private int count(Grid g){
         for(int i = -1; i <= 1; i++){
@@ -30,7 +32,10 @@ public class Genius {
 
             }
         }
+        return 0;
     }
+
+
 
 
 }

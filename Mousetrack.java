@@ -1,6 +1,7 @@
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
+
 public class Mousetrack implements MouseListener{
     Grid g;
     public Mousetrack (Grid f){
@@ -9,9 +10,11 @@ public class Mousetrack implements MouseListener{
 
     @Override
     public void mouseClicked(MouseEvent e) {
-        int x = e.getX();
-        int y = e.getY();
-        g.flipPoint(x,y);
+        int x = e.getX()/20;
+        int y = e.getY()/20;
+        g.flipPoint(y,x);
+        System.out.println(x + ", " + y);
+        g.repaint();
     }
 
     @Override

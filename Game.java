@@ -19,10 +19,11 @@ public class Game extends JFrame {
         ControlPanel c = new ControlPanel(g); //added grid for nanny
 
         Mousetrack grid_clicker = new Mousetrack(g);
-        g.addMouseListener(grid_clicker); //blake, trying this
 
+        g.addMouseListener(grid_clicker); //blake, trying this
         add(g, BorderLayout.CENTER);
         add(c, BorderLayout.SOUTH);
+
 
     }
 }
