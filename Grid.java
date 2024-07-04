@@ -28,6 +28,12 @@ public class Grid extends JPanel{
     }
 
     public void flipPoint(int row,int column){
+        if(row > rows || row < 0){
+            return;
+        }
+        if(column > columns || column < 0){
+            return;
+        }
         if (grid[row][column] == 1) {
             grid[row][column] = 0;
         } else {
@@ -37,10 +43,22 @@ public class Grid extends JPanel{
     }
 
     public void setPoint(int row, int column, int value){
+        if(row > rows || row < 0){
+            return;
+        }
+        if(column > columns || column < 0){
+            return;
+        }
         grid[row][column] = value;
     }
 
     public int getPoint(int row, int column){
+        if(row > rows || row < 0){
+            return 0;
+        }
+        if(column > columns || column < 0){
+            return 0;
+        }
         if (grid[row][column] == 1) {
             return 1;
         } else {
@@ -51,10 +69,17 @@ public class Grid extends JPanel{
 
 
     public void setColumns(int n){
+        if(n > columns|| n < 0) {
+            return;
+        }
         columns = n;
+
     }
 
     public void setRows(int n){
+        if(n > rows|| n < 0) {
+            return;
+        }
         rows = n;
     }
 
