@@ -3,6 +3,9 @@ import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
+/***
+ * @author Blake
+ */
 public class Nanny implements ActionListener {
     private Grid g;
 

@@ -1,6 +1,8 @@
 import javax.swing.*;
 import java.awt.*;
-
+/***
+ * @author Anthony
+ */
 
 public class Grid extends JPanel{
 

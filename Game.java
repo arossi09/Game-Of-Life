@@ -1,6 +1,8 @@
 import javax.swing.*;
 import java.awt.*;
-
+/***
+ * @author Noa
+ */
 public class Game extends JFrame {
 
     public static void main(String[] args){

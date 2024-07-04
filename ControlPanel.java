@@ -1,6 +1,8 @@
 import javax.swing.*;
 import java.awt.*;
-
+/***
+ * @author Noa
+ */
 public class ControlPanel extends JPanel {
 
     Grid g;

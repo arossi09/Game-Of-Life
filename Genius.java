@@ -1,3 +1,7 @@
+/***
+ * @author Steven
+ */
+
 public class Genius {
     public void calculate(Grid g){
         int[][] temp = new int[g.getRows()][g.getColumns()];
