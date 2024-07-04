@@ -59,6 +59,13 @@ public class Grid extends JPanel{
 
     }
 
+    public int getPoint(int row, int column){
+        if (grid[row][column] == 1) {
+            return 1;
+        } else {
+            return 0;
+        }
+    }
 
     public void setColumns(int n){
         columns = n;
