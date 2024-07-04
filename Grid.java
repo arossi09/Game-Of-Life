@@ -8,7 +8,7 @@ public class Grid extends JPanel{
     private int columns = 20;
 
     private int cellsize = 20;
-    int[][] grid = new int[rows][columns];
+    private int[][] grid = new int[rows][columns];
 
 
     public Grid(){
@@ -34,6 +34,10 @@ public class Grid extends JPanel{
             grid[row][column] = 1;
         }
 
+    }
+
+    public void setPoint(int row, int column, int value){
+        grid[row][column] = value;
     }
 
     public int getPoint(int row, int column){
