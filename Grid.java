@@ -4,10 +4,10 @@ import java.awt.*;
 
 public class Grid extends JPanel{
 
-    int rows = 11;
-    int columns = 11;
+    private int rows = 20;
+    private int columns = 20;
 
-    int cellsize = 20;
+    private int cellsize = 20;
     int[][] grid = new int[rows][columns];
 
 
@@ -17,31 +17,8 @@ public class Grid extends JPanel{
 
     }
 
-    /*
-    public static void main(String[] args) {
-        Grid application = new Grid();
-        application.setVisible(true);
-        application.clearGrid();
-
-        JFrame frame = new JFrame("Testing");
-        frame.add(application);
-        frame.pack();
-        frame.setLocationRelativeTo(null);
-        frame.setVisible(true);
-        frame.setSize(250,250);
-
-        application.flipPoint(5,5);
-        application.flipPoint(5,4);
-        application.flipPoint(5,6);
-        application.flipPoint(4,3);
-        application.flipPoint(4,7);
-        application.flipPoint(2,4);
-        application.flipPoint(2,6);
 
 
-        application.repaint();
-    }
-    */
     public void clearGrid(){
         for(int x = 0; x < columns; x++){
             for(int y = 0; y < rows; y++){
@@ -67,6 +44,8 @@ public class Grid extends JPanel{
         }
     }
 
+
+
     public void setColumns(int n){
         columns = n;
     }
@@ -75,10 +54,15 @@ public class Grid extends JPanel{
         rows = n;
     }
 
+    public int getRows(){return rows;}
+
+    public int getColumns(){return columns;}
+
+    public int getCellsize(){return cellsize;}
+
     public void setCellsize(int n){
         cellsize = n;
     }
-
 
     @Override
     public void paintComponent(Graphics g) {
