@@ -7,7 +7,7 @@ public class Game extends JFrame {
 
     public static void main(String[] args){
         Game app = new Game();
-        app.setSize(400, 400);
+        app.setSize(500, 500);
         app.setTitle("Game of Life");
         app.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         app.setResizable(false);

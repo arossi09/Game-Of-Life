@@ -6,8 +6,8 @@ import java.awt.*;
 
 public class Grid extends JPanel{
 
-    private int rows = 20;
-    private int columns = 20;
+    private int rows = 50;
+    private int columns = 50;
 
     private int cellsize = 20;
     private int[][] grid = new int[rows][columns];
