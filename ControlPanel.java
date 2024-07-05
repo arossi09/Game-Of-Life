@@ -25,5 +25,6 @@ public class ControlPanel extends JPanel {
         Nanny actions = new Nanny(g);
         clear.addActionListener(actions);
         next.addActionListener(actions);
+        start.addActionListener(actions);
     }
 }
